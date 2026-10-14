@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --fondo-web: #0a0f0d;
+  --fondo-info: #141f1a;
+  --color-texto: #e0f2e9;
+  --color-resaltar: #00ff66;
+  --color-borde: #1f3a2b;
+
+  --fuente-titulo: "Orbitron", sans-serif;
+  --fuente-texto: "Rajdhani", sans-serif;
+}
+
+html {
+  background-color: var(--fondo-web);
+  font-family: var(--fuente-texto);
+  color: var(--color-texto);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--fuente-titulo);
+  font-weight: 700;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-github{
+    height: 60px;
+    width: 60px;
+}
+
+.fa-person-running,
+.fa-envelope {
+  height: 40px;
+  width: 40px;
+}
+
+.fa-java{
+    height: 40px;
+    width: 40px;
+}
+
+.fa-person-running:hover,
+.fa-envelope:hover{
+  height: 48px;
+  width: 48px;
+}
+
+.fa-java{
+    color: var(--color-resaltar);
+}
+
+#credencial {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 130px 0px 100px;
+  border: 2px solid var(--color-borde);
+  background-color: var(--fondo-info);
+  border-radius: 12px;
+}
+
+#credencial-cuerpo{
+    display: flex;
+    flex-direction: row;
+    gap: 60px
+}
+
+img {
+  border-radius: 12px;
+  display: inline-block;
+  height: 30vh;
+  width: 15vw;
+}
+
+a{
+    color: var(--color-resaltar);
+    text-decoration: none;
+}
+
+a:hover,
+{
+    color:var(--color-resaltar);
+}
+
+#credencial:hover{
+    box-shadow: 2px 2px 12px var(--color-resaltar);
+}
+
+#iconos{
+    display: flex;
+    justify-content: space-between;
+}
+
+#iconos div,
+#iconos a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#foto{
+    position: relative;
+    display: inline-block;
+}
+
+#foto h5{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+#insignia{
+    position: absolute;
+    top: 23%;
+    right: 20%;
+    background-color: var(--color-resaltar);
+    padding: 0px 14px;
+    border-radius: 999px;
+}
